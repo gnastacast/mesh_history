@@ -1,5 +1,5 @@
 # Mesh History
-![GIF showing use of addon](sculpt_versions.gif) / ![](sculpt_versions.gif)
+![GIF showing use of addon](sculpt_versions.gif)
 
 Blender add-on to add the functionality to save versions of your mesh. Useful for sculpting when you want to save previous steps or test different ideas. Tested with 2.93.
 
