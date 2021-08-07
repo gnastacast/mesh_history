@@ -1,11 +1,11 @@
 bl_info = {
-    "name": "Sculpt Versions",
+    "name": "Mesh History",
     "author": "Nico Zevallos <gnastacast@gmail.com>",
     "version": (1,0),
     "blender": (2, 93, 1),
-    "category": "Sculpt",
-    "location": "3D Viewport",
-    "description": "Saves versions of sculpts",
+    "category": "Mesh",
+    "location": "3D View > Sidebar",
+    "description": "Saves versions of mesh data in a hidden collection",
     "warning": "",
     "doc_url": "",
     "tracker_url": "",
@@ -154,9 +154,7 @@ class MESH_HISTORY_OT_get(bpy.types.Operator):
         context.active_object.data = bpy.data.meshes[name].copy()
         context.active_object.data.name = data_name
         bpy.ops.object.mode_set(mode=mode)
-        return {"FINISHED"}
-        
-    
+        return {"FINISHED"}        
 
 class VIEW_3D_PT_mesh_history(bpy.types.Panel):
     bl_space_type = 'VIEW_3D'
